@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>틀린 그림 찾기 : 메이커</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<meta name="keywords" content="공대여자,웹,프로그래밍,DB,PHP,MySQL,ORACLE,SD건담캡슐파이터,캡파,SD건담,sdgo,sdgd" />
+	<meta name="description" content="틀린 그림 찾기 , Spot The Difference" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" type="text/css" href="index.css" charset="utf-8" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="spotTheDifference.js"></script>
+	
+	<script>
+	//<!--
+	$(window).bind("load",function(){
+		spotTheDifference.init();
+		spotTheDifference.setStageInfo(stageInfo);
+		spotTheDifference.isDebug = true;
+	});
+
+
+	//-->
+	</script>
+</head>
+<body>
+	<div id="layout">
+		<div id="contnets">
+	<!-- 해더 : 정보 출력 -->
+	<header>
+		<h1 id="gametitle"><a href="" target="_blank">틀린 그림 찾기</a></h1>
+		<input type="button" onclick="spotTheDifference.diffImgs()" value="차이점 표시">
+	</header>
+	<!-- 섹션 : 게임 부분 -->
+	<section>
+		<section>
+			<h2 id="stageTitle" title="게임 스테이지 타이틀" id="gameStageTitle">스테이지</h2>
+		</section>
+		<section>
+			<progress  id="gameTimer" value="70" max="100" title="게임시간" style="background-color:red;"></progress>
+		</section>
+		<section id="sectionImgs">
+			<div id="divL">
+				<div id="divDivL">
+					<figure id="figureL"><img id="imgL" src="img/88.png"><canvas id="canvasL">캔버스 미지원 브라우저</canvas><canvas id="canvasD">캔버스 미지원 브라우저</canvas></figure>
+				</div>
+			</div>
+			<div id="divR">
+				<div id="divDivR">
+					<figure id="figureR"><img id="imgR" src="img/88.png"><canvas id="canvasR">캔버스 미지원 브라우저</canvas></figure>
+				</div>
+			</div>
+			<div class="clearB"></div>
+		</section>
+	</section>
+	<!-- 풋터 : 정보 출력 -->
+	<footer>
+		<ul>
+			<li>제작자 : 공대여자</li>
+			<li>홈페이지 : <a href="http://www.mins01.com" target="_blank">mins01.com</a></li>
+			<li>필요조건 : HTML5 지원 브라우저가 필요합니다.</li>
+		</ul>
+	</footer>
+		</div>
+	</div>
+</body>
+</html>
