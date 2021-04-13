@@ -191,7 +191,7 @@ var spotTheDifference = {
 		// this.setStat(2);
 		// this.startTimer();
 		setTimeout(function(){
-			alert("## GAME START ##\n stage "+(this.stageInfosIdx+1)+" : "+this.stageInfo.stageTitle);
+			alert("## GAME START ##\n stage "+(spotTheDifference.stageInfosIdx+1)+" : "+spotTheDifference.stageInfo.stageTitle);
 			spotTheDifference.setStat(2);
 			spotTheDifference.startTimer();
 		},100)
