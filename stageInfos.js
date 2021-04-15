@@ -45,20 +45,23 @@ var stageInfos = (function(){
 	// stageInfos.push(stageInfo);
 	// stageInfos.push(stageInfo2);
 	
+	let imgss = []
 	
-	let imgss = [
-		['img/excel_01.png',
+	imgss.push(['img/excel_01.png',
 		'img/excel_02.png',
-		'img/excel_03.png']
-		,
-		['img/Sketch15314354_L.png',
-		'img/Sketch15314354_R.png']
-		,
-		['img/star_01.png',
+		'img/excel_03.png']);
+		
+	imgss.push(['img/Sketch15314354_L.png',
+		'img/Sketch15314354_R.png'])
+		
+	imgss.push(['img/star_01.png',
 		'img/star_02.png',
 		'img/star_03.png',
-		'img/star_04.png']
-	];
+		'img/star_04.png']);
+	imgss.push(['img/excel2-01.png',
+		'img/excel2-02.png',
+		'img/excel2-03.png']);
+
 	let imgs = null;
 	shuffle(imgss);
 	let limit = 2;

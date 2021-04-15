@@ -39,7 +39,7 @@ progress#gameTimer{display:block;padding:0;margin:0;width:100%; height:20px;}
 #divClickL,#divClickR{background-color:#fff;height:100%;border-width:0; padding:0;margin:0 auto; opacity:0; display:block;}
 
 
-#secCnt{text-align:center;height:0px; overflow:visible;position:relative;z-index:1;font-size:24px; opacity:0.5}
+#secCnt{text-align:center;height:0px; overflow:visible;position:relative;z-index:1;font-size:24px; opacity:0.5; pointer-events: none;}
 #searchCnt{color:green; font-weight:bold}
 #goalCnt{color:red; font-weight:bold}
 
