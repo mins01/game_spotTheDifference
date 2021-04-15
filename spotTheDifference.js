@@ -61,7 +61,7 @@ var spotTheDifference = {
 					thisC.contnets.className = "stat-"+thisC.stat
 				}
 			}(this)
-			,0);
+			,10);
 	}
 	/**
 	* 초기이미지로 돌린다.(게임 끝났을 때 동작)
@@ -194,7 +194,7 @@ var spotTheDifference = {
 			alert("## GAME START ##\n stage "+(spotTheDifference.stageInfosIdx+1)+" : "+spotTheDifference.stageInfo.stageTitle);
 			spotTheDifference.setStat(2);
 			spotTheDifference.startTimer();
-		},100)
+		},10)
 	}
 	,"ongameover":function(){
 	}
@@ -219,7 +219,8 @@ var spotTheDifference = {
 		
 	}
 	,"startTimer":function(){
-		var limitTime = Math.min(Math.max(this.stageInfo.solutions.length*5,10),120);
+		// var limitTime = Math.min(Math.max(this.stageInfo.solutions.length*5,10),120);
+		let limitTime = this.stageInfo.limitTime;
 		this.gameTimer.max = limitTime;
 		this.gameTimer.value = this.gameTimer.max;
 		this.stageInfo.startTime = (new Date).getTime();

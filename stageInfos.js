@@ -61,7 +61,10 @@ var stageInfos = (function(){
 	];
 	let imgs = null;
 	shuffle(imgss);
+	let limit = 2;
 	for(var i=0,m=imgss.length;i<m;i++){
+		if(limit--<=0){break;}
+		
 		imgs = imgss[i];
 		shuffle(imgs);
 		stageInfos.push({
